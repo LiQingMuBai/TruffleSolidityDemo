@@ -1,5 +1,5 @@
-const FaZhen = artifacts.require("FaZhen");
+const Law = artifacts.require("Law");
 
 module.exports = function(deployer) {
-  deployer.deploy(FaZhen);
+  deployer.deploy(Law);
 };
