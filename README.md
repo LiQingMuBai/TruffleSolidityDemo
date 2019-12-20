@@ -6,7 +6,7 @@
 
 
 <p align="center">
-  <img width="100%" src="https://cdn.jsdelivr.net/gh/LiQingMuBai/TruffleSolidityDemo/contract.gif">
+  <img width="100%" src="https://cdn.jsdelivr.net/gh/LiQingMuBai/TruffleSolidityDemo/new.gif">
 </p>
 
 # 安装truffle
