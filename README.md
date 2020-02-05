@@ -13,7 +13,7 @@
 ```
 $ npm install -g truffle
 $ npm install -g chai
-$ npm install -g truffle-assertions
+$ npm install truffle-assertions
 ```
 
 # 安装ganache
