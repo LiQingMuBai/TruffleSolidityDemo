@@ -1,5 +1,5 @@
 const Law = artifacts.require("Law");
-// const assert = require("chai").assert;
+const assert = require("chai").assert;
 const truffleAssert = require('truffle-assertions');
 
 contract('Law', (accounts) => {
