@@ -1,5 +1,4 @@
 const Law = artifacts.require("Law");
-const assert = require("chai").assert;
 const truffleAssert = require('truffle-assertions');
 
 contract('Law', (accounts) => {
@@ -103,5 +102,12 @@ contract('Law', (accounts) => {
       });
       const stat = await LawInstance.countEvidences.call();
       assert.equal(stat.valueOf(), 2, "this smart contract's evidence have two records");
+    
+      const _eid = await LawInstance.getEid.call(_biz_id);
+      console.log("=====================================================")
+      console.log("<<<<<<<<<<<<<<<<<<<<<"+_eid+">>>>>>>>>>>>>>>>>>>>>>");
+      console.log("=====================================================")
+  
+  
   });
 });
