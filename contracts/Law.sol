@@ -24,17 +24,12 @@ contract Law {
         uint256  pre_eid;
         string   data;
     }
-    
     mapping(uint256 => Evidence) evidences;
-    
     uint256[] public evidencesHashs;
-
+    mapping(string => uint256) evidenceMap;
     mapping(address => uint8) whitelist;
-    
     event SaveEvidence(uint256 _eid, uint256 _ehash, address _user, string biz_id, uint256 _pre_eid, string _data);
-    
     event SaveWhiteList(address _address, uint8 status);
-    
     function setEvidence(
         uint256  _ehash, 
         uint256  _pre_eid, 
@@ -61,6 +56,10 @@ contract Law {
         emit SaveEvidence(_eid, _ehash, _user, _biz_id, _pre_eid, _data);
     }
     
+    function getEid(string memory  _biz_id) view public returns(uint256){
+        return  evidenceMap[_biz_id];
+    }
+
     function getEvidencesHashs() view public returns(uint256[] memory) {
         return evidencesHashs;
     }
